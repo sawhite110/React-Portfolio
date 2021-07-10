@@ -5,11 +5,12 @@ export default function About() {
     <div>
       <h1>About Me Page</h1>
       {/* My portfolio picture. */}
-          <img
-            id="pic"
-            src="./images/stevenson.jpg"
-            alt="Stevenson Head Shot"
-          />
+      <img
+        id="pic"
+        src="./images/stevenson.jpg"
+        alt="Stevenson Head Shot"
+      />
+      
       <p>
         I am a Full Stack Software Developer with experiene in creating
         clean code, to enhance the user experience and allow people to
