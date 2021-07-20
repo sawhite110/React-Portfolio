@@ -1,4 +1,5 @@
 import React from 'react';
+import { Image, Header } from "semantic-ui-react";
 
 export default function About() {
   return (
@@ -7,11 +8,9 @@ export default function About() {
         <div class="col-md-8">
           <h1>About Me Page</h1>
           {/* My portfolio picture. */}
-          {/* <img
-            id="pic"
-            src="./images/stevenson.jpg"
-            alt="Stevenson Head Shot"
-          /> */}
+          <Header color="black" textAlign="center">
+              <Image src="../public/screenshot6.png" alt="Stevenson Pic" />
+            </Header>
 
           <p>
             I am a Full Stack Software Developer with experiene in creating

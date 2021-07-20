@@ -3,11 +3,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavTabs from "./components/Navbar/NavTabs";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
-// import Contact from "./pages/Contact";
+import Contact from "./pages/Contact";
 import Home from "./pages/Home";
-// import PortfolioContainer from "./components/PortfolioContainer";
-// import About from "./components/pages/About";
-// import './App.css';
 
 function App() {
   return (
@@ -22,7 +19,7 @@ function App() {
             <Portfolio />           
           </Route>
           <Route path="/contact">
-            {/* <Contact /> */}
+            <Contact />
           </Route>
           <Route path="/">
             <Home />
