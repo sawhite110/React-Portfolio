@@ -7,11 +7,11 @@ export default function About() {
         <div class="col-md-8">
           <h1>About Me Page</h1>
           {/* My portfolio picture. */}
-          <img
+          {/* <img
             id="pic"
             src="./images/stevenson.jpg"
             alt="Stevenson Head Shot"
-          />
+          /> */}
 
           <p>
             I am a Full Stack Software Developer with experiene in creating

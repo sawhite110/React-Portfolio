@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
-import { MdClose, MdMenu } from 'react-icons/md';
+// import { MdClose, MdMenu } from 'react-icons/md';
 
 const NavTabsStyles = styled.div`
     position: fixed;
@@ -98,7 +98,7 @@ function NavTabs({ currentPage, handlePageChange }) {
                 role="button"
                 onKeyDown={() => SetShowNav(!showNav)}
                 tabIndex={0}>
-                <MdMenu />
+                {/* <MdMenu /> */}
             </div>
             <ul className="nav nav-tabs" {...showNav ? "navItems hide-item" : "navItems"}>
                 <div className="closeNavIcon"
@@ -108,7 +108,7 @@ function NavTabs({ currentPage, handlePageChange }) {
                     onKeyDown={() => SetShowNav(!showNav)}
                     tabIndex={0}
                 >
-                    <MdClose />
+                    {/* <MdClose /> */}
                 </div>
             <li className="nav-item">
                 <NavLink
