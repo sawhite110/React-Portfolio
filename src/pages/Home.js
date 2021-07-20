@@ -192,8 +192,8 @@ const Home = () => (
             </Header>
             <p style={{ fontSize: "1.33em" }}>
               You will discover the dynamic and user friendly web applications,
-              hosted on both GitHub and Heroku platforms that offer version
-              control and source code management.
+              hosted on both GitHub and Heroku platforms. These two platforms
+              offer version control and source code management.
             </p>
             <Header as="h3" style={{ fontSize: "2em" }}>
               Click away,
@@ -205,8 +205,8 @@ const Home = () => (
           </Grid.Column>
           <Grid.Column floated="right" width={6}>
             <Image
-              src='/images/logo512.png'
-              alt='Head Shot'
+              src="/images/logo512.png"
+              alt="Head Shot"
               // bordered
               // rounded
               // size="large"
