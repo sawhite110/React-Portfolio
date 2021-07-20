@@ -12,7 +12,7 @@ import {
 const Footer = () => {
   const history = useHistory();
   return (
-    <Segment inverted vertical style={{ padding: "5em 0em", color: "#2589BD" }}>
+    <Segment inverted vertical style={{ padding: "2em 0em", color: "#2589BD" }}>
       <Container>
         <Grid divided inverted stackable>
           <Grid.Row>
