@@ -1,24 +1,38 @@
-import { Image, Header, Segment, Grid } from "semantic-ui-react";
+import React from "react";
+import { Image, Header, Segment, Grid, Container, Divider } from "semantic-ui-react";
+import image from "../images/stevenson.jpg";
 
 export default function About() {
   return (
     <div>
-      <section class="row" id="about-me">
-        <div class="col-md-8">
-          <Segment inverted textAlign="center">
-            <Header as="h1" centered>
+      <Container id="about-me">
+        <div>
+          <Segment
+            basic 
+            textAlign="center">
+            <Header as="h1">
               About Me
             </Header>
           </Segment>
+          <Divider hidden/>
 
           {/* My portfolio picture. */}
 
-          <Header color="black" textAlign="center">
-            <Image src="stevenson.jpg" alt="Stevenson Pic" />
-          </Header>
+          {/* <Header color="black" textAlign="center"> */}
+            <Image
+              ui
+              src={image}
+              alt="Stevenson Pic"
+              size="medium"
+              bordered
+              circular/>
+          {/* </Header> */}
+          <Divider hidden/>
 
           {/* Information about the web developer. */}
-          <Segment basic>
+          <Segment
+            basic
+            font-family='sans-serif'>
             <p>
               I am a Full-Stack Web Developer with experience in building
               dynamic, user friendly, and functional web applications.
@@ -34,6 +48,7 @@ export default function About() {
               creating innovative mobile and web applications to increase the
               user experience.
             </p>
+            <Divider hidden/>
             <p>
               Recently awarded an extra vacation day and bonus raise for going
               above and beyond my job duties to ensure Customer satisfaction,
@@ -52,10 +67,13 @@ export default function About() {
               enhance the user experience on the web.
             </p>
           </Segment>
+          <Divider hidden/>
+          <Divider section/>
           <Segment style={{ padding: "0em" }} vertical>
             <Header as="h2" textAlign="center">
               Technical Skills | Languages | Applications | Tools
             </Header>
+            <Divider hidden/>
             <Grid celled="internally" columns="equal" stackable>
               <Grid.Row>
                 <Grid.Column
@@ -74,7 +92,7 @@ export default function About() {
                   style={{ paddingBottom: "5em", paddingTop: "5em" }}
                 >
                   <ul style={{ margin: "1em" }}>
-                    <li>Boodstrap, Materialize CSS, & Senantic UI CSS</li>
+                    <li>Bootstrap, Materialize CSS, & Senantic UI CSS</li>
                     <li>Model View Controler (MVC)</li>
                     <li>Object Oriented Programming (OOP)</li>
                     <li>Node.js, Express.js, & React.js</li>
@@ -86,7 +104,7 @@ export default function About() {
             </Grid>
           </Segment>
         </div>
-      </section>
+      </Container>
     </div>
   );
 }

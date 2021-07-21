@@ -1,6 +1,6 @@
 /* eslint-disable max-classes-per-file */
 /* eslint-disable react/no-multi-comp */
-
+import image from "../images/logo512.png";
 import { createMedia } from "@artsy/fresnel";
 import PropTypes from "prop-types";
 import React, { Component } from "react";
@@ -205,11 +205,11 @@ const Home = () => (
           </Grid.Column>
           <Grid.Column floated="right" width={6}>
             <Image
-              src="/images/logo512.png"
-              alt="Head Shot"
+              src={image}
+              alt="React Logo"
               // bordered
-              // rounded
-              // size="large"
+              rounded
+              size="medium"
             />
           </Grid.Column>
         </Grid.Row>
