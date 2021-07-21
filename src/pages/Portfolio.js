@@ -1,20 +1,15 @@
 import React from "react";
 import {
-  Image,
   Header,
   Segment,
   Divider,
   Item,
   Button,
   Container,
-  Label,
 } from "semantic-ui-react";
 import image1 from "../images/digital-marketing-meeting.jpg";
 import image2 from "../images/screenshot1.png";
 import image3 from "../images/screenshot4.png";
-import image4 from "../images/screenshot6.png";
-import image5 from "../images/screenshot7.png";
-import image6 from "../images/logo512.png";
 
 const style = {
   h1: {
@@ -47,14 +42,6 @@ export default function Portfolio() {
         </p>
       </Segment>
       <Divider hidden />
-      {/* <Image.Group size="small">
-        <Image src="/images/wireframe/image.png" size="small" />
-        <Image src="/images/wireframe/image.png" size="small" />
-        <Image src="/images/wireframe/image.png" size="small" />
-        <Image src="/images/wireframe/image.png" size="small" />
-        <Image src="/images/wireframe/image.png" size="small" />
-        <Image src="/images/wireframe/image.png" size="small" />
-      </Image.Group> */}
       <Header as='h2' content='Projects' style={style.h2} textAlign='center' />
     <Container>
       <Item.Group divided>
