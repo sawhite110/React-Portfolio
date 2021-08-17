@@ -84,8 +84,9 @@ export default function About() {
                     <li>Problem Solving</li>
                     <li>Management</li>
                     <li>Networking</li>
-                    <li>HTML, CSS, & JavaScript(ES6)</li>
+                    <li>HTML5, CSS3, & JavaScript (ES6)</li>
                     <li>MongoDB & MySQL</li>
+                    <li>C++ & C#</li>
                   </ul>
                 </Grid.Column>
                 <Grid.Column
@@ -98,6 +99,7 @@ export default function About() {
                     <li>Node.js, Express.js, & React.js</li>
                     <li>Third-Party & Server-Side API's</li>
                     <li>Dependency Injection</li>
+                    <li>Model-View-Controller (MVC)</li>
                   </ul>
                 </Grid.Column>
               </Grid.Row>

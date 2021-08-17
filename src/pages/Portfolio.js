@@ -67,6 +67,7 @@ export default function Portfolio() {
               </Item.Extra>
             </Item.Content>
           </Item>
+          <Divider hidden />
           <Item>
             <Item.Image src={image2} />
             <Item.Content>
@@ -88,6 +89,7 @@ export default function Portfolio() {
               </Item.Extra>
             </Item.Content>
           </Item>
+          <Divider hidden />
           <Item>
             <Item.Image src={image3} />
             <Item.Content>
@@ -109,6 +111,7 @@ export default function Portfolio() {
               </Item.Extra>
             </Item.Content>
           </Item>
+          <Divider hidden />
           <Item>
             <Item.Image src={image4} />
             <Item.Content>
@@ -135,6 +138,7 @@ export default function Portfolio() {
               </Item.Extra>
             </Item.Content>
           </Item>
+          <Divider hidden />
         </Item.Group>
       </Container>
     </div>
