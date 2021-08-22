@@ -7,6 +7,7 @@ export default function About() {
     <div>
       <Container id="about-me">
         <div>
+        <Divider hidden/>
           <Segment
             basic 
             textAlign="center">
@@ -17,8 +18,6 @@ export default function About() {
           <Divider hidden/>
 
           {/* My portfolio picture. */}
-
-          {/* <Header color="black" textAlign="center"> */}
             <Image
               ui
               src={image}
@@ -55,11 +54,11 @@ export default function About() {
               while assisting management in new customer business, and awarded a
               20 year plaque and recognized for years of service. Also awarded a
               plaque and recognized by the company and customer for the first
-              and only 100% score for inventory management during customer
+              and only 100% score for inventory management during a customer
               audit. I’ve also been awarded and recognized for going above and
               beyond to ensure the safety of others within the company. Within
               my leadership role, I created the process in place to minimize
-              company liability by disposing of damaged customer products. I
+              company liability by disposing of damaged customer products in our AS400 system. I
               strive to learn my environment and look for ways to improve
               multiple aspects and processes. I look forward to working in a
               fast-paced Agile team environment, where I can leverage my skills
