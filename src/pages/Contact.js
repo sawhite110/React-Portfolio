@@ -1,61 +1,95 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import {
-    Form,
-  } from 'semantic-ui-react';
+  Form,
+  Header,
+  Segment,
+  Divider,
+  TextArea,
+  Item,
+  Button,
+  Container,
+} from "semantic-ui-react";
 
-  class Contact extends Component {
-    state = {}
-  
-    handleChange = (e, { name, value }) => this.setState({ [name]: value })
-  
-    handleSubmit = () => this.setState({ email: '', name: '' })
-  
-    render() {
-      const { name, email, submit } = this.state
-  
-      return (
+const style = {
+  h1: {
+    marginTop: "3em",
+  },
+  h2: {
+    margin: "4em 0em 2em",
+  },
+  h3: {
+    marginTop: "2em",
+    padding: "2em 0em",
+  },
+  last: {
+    marginBottom: "300px",
+  },
+};
+
+class Contact extends Component {
+  state = {};
+
+  handleChange = (e, { name, value }) => this.setState({ [name]: value });
+
+  handleSubmit = () => this.setState({ email: "", name: "" });
+
+  render() {
+    const { name, email, submit } = this.state;
+
+    return (
+      <div>
+        <Divider hidden />
+        <Segment basic textAlign="center">
+          <Header as="h1">Contact Me</Header>
+        </Segment>
+        <Divider hidden />
         <Form onSubmit={this.handleSubmit}>
           <Form.Group
-            widths='equal'
+            widths="equal"
             action="mailto:stevenson.whiteii@gmail.com"
-            method="post">
-              <Form.Input
-                label="First Name"
-                placeholder='First Name'
-                name='firstName'
-                value={name}
-                width={6}
-                onChange={this.handleChange}
-              />
-              <Form.Input
-                label="Last Name"
-                placeholder='Last Name'
-                name='lastName'
-                value={name}
-                width={6}
-                onChange={this.handleChange}
-              />
+            method="post"
+          >
             <Form.Input
-              placeholder='Email'
-              name='email'
+              label="First Name"
+              placeholder="First Name"
+              name="firstName"
+              value={name}
+              width={6}
+              onChange={this.handleChange}
+            />
+            <Form.Input
+              label="Last Name"
+              placeholder="Last Name"
+              name="lastName"
+              value={name}
+              width={6}
+              onChange={this.handleChange}
+            />
+            <Form.Input
+              placeholder="Email"
+              name="email"
               value={email}
               onChange={this.handleChange}
             />
             <Form.Field>
-            <label>User Input</label>
-            <input />
+            <TextArea placeholder='Send me a message here...' />
             </Form.Field>
             <Form.Button
-            content='Submit'
-            name="submit"
-            value={submit} />
+              content="Submit"
+              name="submit"
+              value={submit}
+              widths="equal"
+              action="mailto:stevenson.whiteii@gmail.com"
+              method="post"
+            />
           </Form.Group>
         </Form>
-      )
-    }
+      </div>
+    );
   }
-  
-  export default Contact;
+}
+
+export default Contact;
 
 // export default function Contact() {
 //   return (
@@ -98,7 +132,7 @@ import {
 //          {/* <!-- Add a Twitter account link upon opening a new one. --> */}
 //          <a class="footer-link" href="#">Twitter</a>
 //          </Segment>
-        
+
 //      </Container>
 //    );
 // }
