@@ -34,7 +34,7 @@ const HomepageHeading = ({ mobile }) => (
   <Container text>
     <Header
       as="h1"
-      content="Welcome to my page!"
+      content="Welcome to my React Portfolio page!"
       style={{
         fontSize: mobile ? "2em" : "4em",
         fontWeight: "normal",
@@ -183,7 +183,7 @@ ResponsiveContainer.propTypes = {
 
 const Home = () => (
   <ResponsiveContainer>
-    <Segment style={{ padding: "8em 0em" }} vertical>
+    <Segment style={{ padding: "1em 0em 7em 0em" }} vertical>
       <Grid container stackable verticalAlign="middle">
         <Grid.Row>
           <Grid.Column width={8}>

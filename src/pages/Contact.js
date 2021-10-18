@@ -4,10 +4,9 @@ import {
   Header,
   Segment,
   Divider,
-  TextArea,
-  Item,
-  Button,
-  Container,
+  // Item,
+  // Button,
+  // Container,
 } from "semantic-ui-react";
 
 const style = {
@@ -24,6 +23,9 @@ const style = {
   last: {
     marginBottom: "300px",
   },
+  paddingBottom: "3.5em",
+  paddingLeft: "10em",
+  paddingRight: "10em",
 };
 
 class Contact extends Component {
@@ -37,9 +39,13 @@ class Contact extends Component {
     const { name, email, submit } = this.state;
 
     return (
-      <div>
+      <div
+      style = {style}
+      >
         <Divider hidden />
-        <Segment basic textAlign="center">
+        <Segment 
+          style = {{padding: "1em 0em"}}
+          basic textAlign="center">
           <Header as="h1">Contact Me</Header>
         </Segment>
         <Divider hidden />
@@ -49,40 +55,48 @@ class Contact extends Component {
             action="mailto:stevenson.whiteii@gmail.com"
             method="post"
           >
+            <Divider hidden />
             <Form.Input
               label="First Name"
               placeholder="First Name"
               name="firstName"
               value={name}
-              width={6}
+              width={8}
               onChange={this.handleChange}
             />
+            <Divider hidden />
             <Form.Input
               label="Last Name"
               placeholder="Last Name"
               name="lastName"
               value={name}
-              width={6}
+              width={8}
               onChange={this.handleChange}
             />
+            <Divider hidden />
             <Form.Input
+              label="Email"
               placeholder="Email"
               name="email"
               value={email}
               onChange={this.handleChange}
             />
-            <Form.Field>
-            <TextArea placeholder='Send me a message here...' />
+            </Form.Group>
+            <Divider hidden />
+            <Form.Field
+            >
+            <Form.TextArea
+              label="Message"
+              placeholder='Send me a message here...' />
             </Form.Field>
             <Form.Button
               content="Submit"
               name="submit"
               value={submit}
-              widths="equal"
+              // widths="equal"
               action="mailto:stevenson.whiteii@gmail.com"
               method="post"
-            />
-          </Form.Group>
+            >Submit</Form.Button>
         </Form>
       </div>
     );
